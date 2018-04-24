@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #f2f2f2;
+    color: black;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: black;
+    font-family: "Dancing Script";
+}
+
+
+
+/*Encabezado*/
+
+header {
+    margin: 0 auto;
+    height: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: white;
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    color: white;
+    font-family: "Dancing Script";
+    width: 900px;
+}
+
+#titulo {
+    display: block;
+    text-shadow: 2px 2px #02010a;
+    /*float: left;*/
+    width: 70%;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+#nav-menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+/*Contenido*/
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+article {
+    box-sizing: border-box;
+    float: left;
+    background-color: grey;
+    padding: 2%;
+    text-align: center;
+    height: 400px;
+}
+
+.paisaje, .retrato {
+    width: 33.33%;
+    height: auto;
+    margin: auto;
+}
+
+
+img {
+    width: 100%;
+    box-shadow: 2px 2px #02010a;
+    height: 100%;
+}
+
+footer .logo {
+    width: 20px;
+    height: 20px;
+}
+
+#columna1 {
+    background-color: #82c3a6;
+    width: 100%;
+
+}
+
+#columna2 {
+    background-color: #d5c75f;
+    border: 2px;
+    width: 50%;
+}
+
+#columna3 {
+    background-color: #d5c75f;
+    border: 2px;
+    width: 50%;
+}
+
+#columna2 img {
+    background-image: url(/paisajes.html);
+}
+
+#columna2 img:hover {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+#columna2 img {
+    background-image: url(/retratos.html);
+}
+
+#columna3 img:hover {
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px ##82c3a6;
+}
+
+/* imagenes de paisaje*/
+
+#imagen11, #retrato1 {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+#imagen22, #imagen44, #imagen66, #retrap2, #retrato4, #retrato6 {
+    -webkit-filter: grayscale (100%);
+    filter: grayscale(100%);
+}
+#imagen33, #retrato3 {
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+/*retratos*/
+
+
+
+
+/*pie de pagina*/
+
+footer {
+    clear: both;
+    background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 10px 10px 10px;
+    margin: 0px;
+    border: 0px;
+    text-align: center;
+    font-size: 15px;
+    flex-grow: 1;
+    display: flex;
+}
+
+.footer_content {
+    width: 100%;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    margin: auto;
+
+}
+
+@media screen and (max-width: 960px) {
+
+    #wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        background-color: #5b7989;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #titulo {
+        display: block;
+        color: white;
+        text-shadow: 2px 2px #02010a;
+        width: 100%;
+    }
+
+    #nav-menu {
+        display: flex;
+    }
+
+    ul {
+        margin: auto;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #columna1 {
+        width: 100%;
+    }
+    #columna2 {
+        width: 100%;
+    }
+    #columna3 {
+        width: 100%;
+    }
+    
+    
+    /*estilo para paginas retrato y paisaje*/
+    .retrato, .paisaje{
+          width: 100%;
+    }
+    
+    footer {
+        clear: both;
+        background-color: #C6d5c5;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        font-size: 1.5 em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_content {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer_content p {
+        text-align: center;
+        align-content: center;
+    }
+
+}
